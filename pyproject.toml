@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tofamba-pulse"
+version = "0.1.0"
+description = "The supervision layer for autonomous agents. When your agents loop, overspend, or get stuck — Pulse pings your WhatsApp and nothing continues without your say-so."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Tofamba", email = "tofambatech@outlook.com" }
+]
+license = "MIT"
+dependencies = [
+  "httpx",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-asyncio",
+  "fakeredis",
+]
+
+[project.urls]
+Homepage    = "https://github.com/Tofamba/tofamba-pulse"
+Product     = "https://app.tofamba.com"
