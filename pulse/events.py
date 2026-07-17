@@ -32,6 +32,7 @@ class EventType(str, Enum):
 
     # Audit
     HUMAN_DECISION    = "HUMAN_DECISION"  # any human decision logged
+    SHADOW_INTERVENTION = "SHADOW_INTERVENTION"  # would have intervened in shadow mode
 
 
 @dataclass

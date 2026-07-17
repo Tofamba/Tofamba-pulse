@@ -10,6 +10,7 @@ continues without your say-so.
 from .session import SupervisionSession, supervise
 from .events import AgentEvent, EventType
 from .config import PulseConfig
+from .decorators import shadow_supervise
 
 __version__ = "0.1.0"
-__all__ = ["supervise", "SupervisionSession", "AgentEvent", "EventType", "PulseConfig"]
+__all__ = ["supervise", "SupervisionSession", "AgentEvent", "EventType", "PulseConfig", "shadow_supervise"]

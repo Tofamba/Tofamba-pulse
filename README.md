@@ -155,6 +155,42 @@ At the end of a Shadow Mode evaluation — or on demand — Pulse generates a **
 
 ---
 
+
+
+---
+
+## 🚀 The 7-Day Shadow Challenge
+
+Worried about your AI agents going rogue but not ready to add supervision yet?
+
+**Step 1** — Install Pulse:
+```bash
+pip install tofamba-pulse
+```
+
+**Step 2** — Add one decorator to your agent function:
+```python
+from pulse.decorators import shadow_supervise
+
+@shadow_supervise("my-agent", cost_limit=10.0)
+def run_my_agent(data):
+    # your existing agent logic — unchanged
+    ...
+```
+
+**Step 3** — Run normally for 7 days. Zero production impact. No WhatsApp alerts. No pauses.
+
+**Step 4** — At the end of the week, get your **Certified Governance Report** showing:
+- Every point where your agent hit an uncertainty boundary
+- Every loop or retry that Pulse would have caught
+- Every cost spike that would have triggered a circuit breaker
+- The SHA-256 integrity hash of the complete observation ledger
+
+> *"I'm not asking you to trust my AI. I'm asking you to let my Audit Ledger observe your AI for a week. The data will speak for itself."*
+
+**[Start your Shadow Challenge →](mailto:tofambatech@outlook.com)**
+
+---
 ## Pricing
 
 | Plan | Price | Agents | Sessions/mo |

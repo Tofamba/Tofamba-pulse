@@ -288,6 +288,7 @@ def supervise(
     max_retries: int = 5,
     config: Optional[PulseConfig] = None,
     session_id: Optional[str] = None,
+    shadow_mode: bool = False,
 ):
     """
     Context manager for supervised agent execution.
@@ -307,6 +308,8 @@ def supervise(
             result = agent.run()
     """
     cfg = config or get_config()
+    if shadow_mode:
+        cfg.shadow_mode = True
     session = SupervisionSession(
         agent_name=agent_name,
         config=cfg,
